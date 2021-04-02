@@ -4,7 +4,7 @@ return 格式 （json）
 
 ```json
 {
-"code":200, // 状态码
+"code":0, // 状态码
 "message":"成功", // 调用结果
 "result":{} // 返回结果集
 }
@@ -35,6 +35,7 @@ result:{
 	  type  : "html",      
 	  src   : "/events/article/article.html",  // 绝对位置
 	}
+	path    : String  // 路由索引
 }
 ```
 
@@ -54,12 +55,12 @@ url:/events/list?page=1
 
 ```
 result:[{
-	id:Number // 文章ID
-	title: String,
-	introduction: String ,
-	thumbnail:{
-		src: String,
-		alt: String
+	id           : Number    // 文章ID
+	title        : String,   // 标题
+	introduction : String ,  // 简短介绍
+	thumbnail : {            // 主图
+	  src     : String,
+	  alt     : String
 	},
 },]
 ```
