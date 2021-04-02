@@ -8,6 +8,14 @@ const EventsDAO = function () {
         }
         return null;
     };
+    this.selectPath = function (path) {
+        for (let i = 0; i < this.eventsData.length; i++) {
+            if (this.eventsData[i].path == path) {
+                return this.getArticleDetail(i);
+            }
+        }
+        return null;
+    };
     this.getArticleDetail = function (index) { // 获取数组的索引, 返回文章页所需的对象
         const element = this.eventsData[index];
         return {

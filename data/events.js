@@ -1,4 +1,4 @@
-const ossBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/events/";
+const ossBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/events";
 //
 // 数据结构
 const structure = {
@@ -14,7 +14,7 @@ const structure = {
     title: "title",              // 文章标题
     introduction: "introuciont", // 文章简短介绍
     article: {
-        type: "html",            // 文章存放的类型
+        type: "iframe",          // 文章引用的类型  iframe / HTML
         src: "/",                // 相对位置
     },
     authorID: 0,                 // 作者ID
@@ -33,7 +33,7 @@ const eventsData = [{
     title: "TEDxShenzhen2021年度大会预告 | 浪潮之后，迎接改变",
     introduction: "刚刚离去的2020年，是一场全球性的巨变。突如其来的疫情，带来工作方式、消费习惯、出行活动等各个方面的改变，甚至重新审视起个体于世界的联系，包括生命观、价值观......",
     article: {
-        type: "html",
+        type: "iframe",
         src: "/changed-by/changed-by.html?versionId=CAEQHRiBgICi7Y7MxBciIDQ1MjRmOGZlNDg4OTQ3YzdiM2JjOTVjZjY4NDc2ZWFm",
     },
     authorID: 0,

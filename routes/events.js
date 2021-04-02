@@ -5,8 +5,12 @@ const eventsDAO = new Dao;
 /* GET events listing. */
 router.get('/', function (req, res, next) {
     const params = req.query;
-    let data = eventsDAO.selectId(params.id);
-    console.log(typeof data == "object")
+    let data = null;
+    if (params.path) {
+        data = eventsDAO.selectPath(params.path);
+    } else if (params.id) {
+        data = eventsDAO.selectId(params.id);
+    }
     if (data && typeof data == "object") {
         res.json({
             code: 0,
