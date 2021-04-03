@@ -18,11 +18,11 @@ const structure = {
         type: "iframe",          // 文章引用的类型  iframe / HTML
         src: "/",                // 相对位置
     },
-    createTS:"",              // 创建时间  时间戳
+    createTS: "",              // 创建时间  时间戳
     authorID: 0,                 // 作者ID
     path: "/changed-by",         // 前端页面访问，路由索引
 }
-const eventsData = [{
+const newsData = [{
     id: 1,
     banner: {
         src: "/changed-by/banner.jpg",
@@ -38,7 +38,7 @@ const eventsData = [{
         type: "iframe",
         src: "changed-by.html",
     },
-    createTS:"",
+    createTS: "",
     authorID: 0,
     path: "/changed-by",
 }, {
@@ -57,17 +57,17 @@ const eventsData = [{
         type: "iframe",
         src: "TEDxShenzhen2021Annual.html",
     },
-    createTS:"",
+    createTS: "",
     authorID: 0,
     path: "/tedxshenzhen2021annual",
 }];
-function eventsInit() {
+function newsInit() {
     let output = [];
-    for (let i = 0; i < eventsData.length; i++) { // 将src补全
-        output.push(eventsData[i]);
-        output[i].banner.src = ossBaseURL + eventsData[i].banner.src;
-        output[i].article.src = HTMLBaseURL + eventsData[i].article.src;
+    for (let i = 0; i < newsData.length; i++) { // 将src补全
+        output.push(newsData[i]);
+        output[i].banner.src = ossBaseURL + newsData[i].banner.src;
+        output[i].article.src = HTMLBaseURL + newsData[i].article.src;
     }
     return output;
 }
-module.exports = eventsInit();
+module.exports = newsInit();
