@@ -4,7 +4,7 @@ const Dao = require("../dao/newsDAO");
 const newsDAO = new Dao;
 /* GET events listing. */
 const returnFilter = function (data) {
-    if (data && typeof data == "object")
+    if (data && typeof data == "object" && data.length > 0)
         return {
             code: 0,
             message: "获取成功",
@@ -19,9 +19,10 @@ const returnFilter = function (data) {
 }
 router.get('/list', function (req, res, next) {
     const params = req.query;
-    let index = (params.page - 1) * 10;
+    let pageNum = 3;
+    let index = (params.page - 1) * pageNum;// 锁定每次请求数量为10
     let data = null;
-    data = newsDAO.selectList(10, index);
+    data = newsDAO.selectList(pageNum, index);
     res.json(returnFilter(data));
 });
 
