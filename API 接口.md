@@ -65,5 +65,64 @@ result:[{
 },]
 ```
 
-#### 
+
+
+####  /videos
+
+获取单个视频相关数据
+
+##### request
+
+```
+url:/videos?id=1
+```
+
+```
+url:/videos?path=/
+```
+
+return
+
+```
+result:{
+	id           : Number,  // 视频ID
+	title        : String,  // 标题
+	introduction : String,  // 简短描述
+	contentHTML  : String,  // 详细介绍
+    createTS     : Number,  // 创建时间
+    video : {
+      type       : String,  // 视频引用的类型 iframe / src
+      src        : String,  // 是firame时，指向网址，是src时，指向文件
+    },
+    path         : String,  // 路由路径   
+}
+```
+
+
+
+#### /list
+
+获取一组 events 数据，用于列表展示
+
+##### **request**
+
+```
+url:/videos/list?page=1
+```
+
+##### return
+
+```
+result:[{
+	id           : Number,   // 视频ID
+	title        : String,   // 标题
+	introduction : String,   // 简短介绍
+	thumbnail : {            // 主图
+	  src        : String,   
+	  alt        : String,
+	},
+	createTS     : Number,   // 创建时间
+	path         : String,   // 路由路径    
+},]
+```
 
