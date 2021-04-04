@@ -44,11 +44,11 @@ const newsData = [{
 }, {
     id: 2,
     banner: {
-        src: "/TEDxShenzhen2021Annual/banner.jpg",
+        src: "TEDxShenzhen2021Annual/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "TEDxShenzhen2021Annual/banner.jpg?versionId=CAEQHRiBgICz6ubhxBciIGEwYTkxN2Y3NDRlNzQxZGU5NzQxMzE3MmZhYWFhMjIw",
+        src: "TEDxShenzhen2021Annual/banner.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
@@ -63,11 +63,11 @@ const newsData = [{
 }, {
     id: 3,
     banner: {
-        src: "/TEDxShenzhen2021Annual/banner.jpg",
+        src: "TEDxShenzhen2021Annual/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "/TEDxShenzhen2021Annual/thumbnail.jpg",
+        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
@@ -78,15 +78,15 @@ const newsData = [{
     },
     createTS: "",
     authorID: 0,
-    path: "/tedxshenzhen2021annual",
+    path: "/tedxshenzhen21annual",
 }, {
     id: 4,
     banner: {
-        src: "/TEDxShenzhen2021Annual/banner.jpg",
+        src: "TEDxShenzhen2021Annual/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "/TEDxShenzhen2021Annual/thumbnail.jpg",
+        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
@@ -97,15 +97,15 @@ const newsData = [{
     },
     createTS: "",
     authorID: 0,
-    path: "/tedxshenzhen2021annual",
+    path: "/tedxshenen2021annual",
 }, {
     id: 5,
     banner: {
-        src: "/TEDxShenzhen2021Annual/banner.jpg",
+        src: "TEDxShenzhen2021Annual/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "/TEDxShenzhen2021Annual/thumbnail.jpg",
+        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
@@ -116,15 +116,15 @@ const newsData = [{
     },
     createTS: "",
     authorID: 0,
-    path: "/tedxshenzhen2021annual",
+    path: "/tedxshenz21annual",
 }, {
     id: 6,
     banner: {
-        src: "/TEDxShenzhen2021Annual/banner.jpg",
+        src: "TEDxShenzhen2021Annual/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "/TEDxShenzhen2021Annual/thumbnail.jpg",
+        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
@@ -135,15 +135,15 @@ const newsData = [{
     },
     createTS: "",
     authorID: 0,
-    path: "/tedxshenzhen2021annual",
+    path: "/tedxshenzhannual",
 }, {
     id: 7,
     banner: {
-        src: "/TEDxShenzhen2021Annual/banner.jpg",
+        src: "TEDxShenzhen2021Annual/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "/TEDxShenzhen2021Annual/thumbnail.jpg",
+        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
@@ -154,7 +154,7 @@ const newsData = [{
     },
     createTS: "",
     authorID: 0,
-    path: "/tedxshenzhen2021annual",
+    path: "/tedxshennual",
 }];
 function newsInit() {
     let output = [];
