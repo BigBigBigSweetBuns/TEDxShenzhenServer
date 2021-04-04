@@ -33,7 +33,7 @@ const data = [
         },
         createTS: "",
         authorID: 0,
-        path: "/why-they-can-only-be-silent-to-strangers",
+        path: "why-they-can-only-be-silent-to-strangers",
     }, {
         id: 2,
         thumbnail: {
@@ -49,7 +49,7 @@ const data = [
         },
         createTS: "",
         authorID: 0,
-        path: "/how-do-we-need-to-rethink-our-basic-education",
+        path: "how-do-we-need-to-rethink-our-basic-education",
     }, {
         id: 3,
         thumbnail: {
@@ -65,7 +65,7 @@ const data = [
         },
         createTS: "",
         authorID: 0,
-        path: "/Feel-the-power-of-the-land-and-self-by-walking",
+        path: "Feel-the-power-of-the-land-and-self-by-walking",
     }, {
         id: 4,
         thumbnail: {
@@ -81,7 +81,7 @@ const data = [
         },
         createTS: "",
         authorID: 0,
-        path: "/when-creation-becomes-a-habit",
+        path: "when-creation-becomes-a-habit",
     }
 ];
 function videosInit() {
