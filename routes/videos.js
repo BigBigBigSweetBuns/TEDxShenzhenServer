@@ -42,7 +42,7 @@ router.get('/', function (req, res, next) {
 })
 router.get('/list', function (req, res, next) {
     const params = req.query;
-    let pageNum = 3;
+    let pageNum = 6;
     let index = (params.page - 1) * pageNum;// 锁定每次请求数量为10
     let data = null;
     data = videosDAO.selectList(pageNum, index);
