@@ -11,6 +11,11 @@ var videosRouter = require('./routes/videos');
 
 var app = express();
 
+// 跨域  cors
+var cors = require('cors');
+var corsOptions = require('./config/cors');
+app.use(cors({ corsOptions }));
+
 // view engine setup
 app.set('views', path.join(__dirname,
   'views'));
