@@ -1,4 +1,4 @@
-const ossBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/news/"
+const ossThumbnailBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/videos/thumbnail"
 // 数据结构
 const structure = {
     id: 0,                       // 文章ID
@@ -22,7 +22,7 @@ const data = [
     {
         id: 1,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/why-they-can-only-be-silent-to-strangers.jpg",
             alt: "thumbnail",
         },
         title: "为什么他们对陌生人只能沉默",
@@ -39,7 +39,7 @@ const data = [
     }, {
         id: 2,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/how-do-we-need-to-rethink-our-basic-education.jpg",
             alt: "thumbnail",
         },
         title: "我们的基础教育需要如何重新思考？ | 葛庆飞@TEDxShenzhen",
@@ -56,7 +56,7 @@ const data = [
     }, {
         id: 3,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/feel-the-power-of-the-land-and-self-by-walking.jpg",
             alt: "thumbnail",
         },
         title: "通过行走感受土地与自我的力量 | 半落@TEDxShenzhen",
@@ -69,11 +69,11 @@ const data = [
         division: "talk",
         createTS: "",
         authorID: 0,
-        path: "/Feel-the-power-of-the-land-and-self-by-walking",
+        path: "/feel-the-power-of-the-land-and-self-by-walking",
     }, {
         id: 4,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/when-creation-becomes-a-habit.jpg",
             alt: "thumbnail",
         },
         title: "当创造成为一种习惯, 生活便再也不会平凡 | 谷逍驰@TEDxShenzhen",
@@ -90,7 +90,7 @@ const data = [
     }, {
         id: 5,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/reduce-carbon-emissions.jpg",
             alt: "thumbnail",
         },
         title: "降低碳排放的“偏方” | 韩农@TEDxShenzhen",
@@ -107,7 +107,7 @@ const data = [
     }, {
         id: 6,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/the-cave-is-a-planet-without-light.jpg",
             alt: "thumbnail",
         },
         title: "洞穴是没有光的星球 | 刘佳@TEDxShenzhen",
@@ -124,7 +124,7 @@ const data = [
     }, {
         id: 7,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/building-city-Developmental-self-contradiction.jpg",
             alt: "thumbnail",
         },
         title: "能否通过建筑解决城市发展的自我矛盾 | 张之杨@TEDxShenzhen",
@@ -141,7 +141,7 @@ const data = [
     }, {
         id: 8,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/wonder.jpg",
             alt: "thumbnail",
         },
         title: "丛林 | XY Pattern@TEDxShenzhen",
@@ -158,7 +158,7 @@ const data = [
     }, {
         id: 10,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/listen-to-the-tide.jpg",
             alt: "thumbnail",
         },
         title: "听潮 | 叶破 周贵东 刘静芸 @TEDxShenzhen",
@@ -175,7 +175,7 @@ const data = [
     }, {
         id: 11,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/assembly-line-workers-become-New-York-programmers.jpg",
             alt: "thumbnail",
         },
         title: "工厂流水线工人到纽约程序员 | 孙玲@TEDxShenzhen",
@@ -188,11 +188,11 @@ const data = [
         division: "talk",
         createTS: "",
         authorID: 0,
-        path: "/Assembly-line-workers-become-New-York-programmers",
+        path: "/assembly-line-workers-become-New-York-programmers",
     }, {
         id: 12,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/how-much-plastic-do-we-eat-every-week.jpg",
             alt: "thumbnail",
         },
         title: "我们每周会吃下多少塑料？关于无塑化社会的践行 | 雒晓彬@TEDxShenzhen",
@@ -209,7 +209,7 @@ const data = [
     }, {
         id: 13,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/help-people-with-disabilities-return-to-life.jpg",
             alt: "thumbnail",
         },
         title: "脑机接口将如何帮助残障人士回归生活 | 韩璧丞@TEDxShenzhen",
@@ -226,7 +226,7 @@ const data = [
     }, {
         id: 14,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/what-is-the-unique-recipe-for-gourmet-food.jpg",
             alt: "thumbnail",
         },
         title: "独一无二的美食秘方是什么？ | 罗朗@TEDxShenzhen",
@@ -243,7 +243,7 @@ const data = [
     }, {
         id: 15,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/happy-Architecture.jpg",
             alt: "thumbnail",
         },
         title: "把建筑空间变成巨型玩具——快乐建筑学 | 阮文韬Manfred Yuen@TEDxShenzhen",
@@ -260,7 +260,7 @@ const data = [
     }, {
         id: 16,
         thumbnail: {
-            src: "/thumbnail.jpg",
+            src: "/tedxshenzhen-2019-tidbits.jpg",
             alt: "thumbnail",
         },
         title: "TEDxShenzhen活动花絮",
@@ -280,7 +280,7 @@ function videosInit() {
     let output = [];
     for (let i = 0; i < data.length; i++) { // 将src补全
         output.push(data[i]);
-        output[i].thumbnail.src = ossBaseURL + data[i].thumbnail.src;
+        output[i].thumbnail.src = ossThumbnailBaseURL + data[i].thumbnail.src;
     }
     return output;
 }
