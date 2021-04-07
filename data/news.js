@@ -25,136 +25,79 @@ const structure = {
 const newsData = [{
     id: 1,
     banner: {
-        src: "/changed-by/banner.jpg",
+        src: "/2021AnnualConferencePreview/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "/changed-by/thumbnail.jpg",
+        src: "/2021AnnualConferencePreview/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会预告 | 浪潮之后，迎接改变",
-    introduction: "刚刚离去的2020年，是一场全球性的巨变。突如其来的疫情，带来工作方式、消费习惯、出行活动等各个方面的改变，甚至重新审视起个体于世界的联系，包括生命观、价值观......",
+    introduction: "刚刚离去的2020年，是一场全球性的巨变。突如其来的疫情，带来工作方式、消费习惯、出行活动等各个方面的改变，甚至重新审视起个体于世界的联系，包括生命观、价值观...",
     article: {
         type: "iframe",
-        src: "changed-by.html",
+        src: "2021AnnualConference-preview.html",
     },
-    createTS: "",
+    createTS: "1614614400",
     authorID: 0,
-    path: "/changed-by",
+    path: "/2021AnnualConference-preview",
 }, {
     id: 2,
     banner: {
-        src: "TEDxShenzhen2021Annual/banner.jpg",
+        src: "2021AnnualConference_officially_open/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "TEDxShenzhen2021Annual/banner.jpg",
+        src: "2021AnnualConference_officially_open/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
-    introduction: "曾经，地球这个巨⼤的⻮轮随着全球化发展⽇以继夜地转动着，引导⼈类离开原地探索了世界的各个⻆落。 但在过去⼀年，这个巨⼤的⻮轮仿佛突然生锈了⼀般卡住，惊慌的⼈类⼜回归到闭塞的世界⾥⽆法相通: ",
+    introduction: "曾经，地球这个巨⼤的⻮轮随着全球化发展⽇以继夜地转动着，引导⼈类离开原地探索了世界的各个⻆落...",
     article: {
         type: "iframe",
-        src: "TEDxShenzhen2021Annual.html",
+        src: "2021AnnualConference-officially-open.html",
     },
-    createTS: "",
+    createTS: "1616169600",
     authorID: 0,
-    path: "/tedxshenzhen2021annual",
+    path: "/2021AnnualConference-officially-open",
 }, {
     id: 3,
     banner: {
-        src: "TEDxShenzhen2021Annual/banner.jpg",
+        src: "2021AnnualConference-speaker-list/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
+        src: "2021AnnualConference-speaker-list/thumbnail.jpg",
         alt: "thumbnail",
     },
-    title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
-    introduction: "曾经，地球这个巨⼤的⻮轮随着全球化发展⽇以继夜地转动着，引导⼈类离开原地探索了世界的各个⻆落。 但在过去⼀年，这个巨⼤的⻮轮仿佛突然生锈了⼀般卡住，惊慌的⼈类⼜回归到闭塞的世界⾥⽆法相通: ",
+    title: "TEDxShenzhen2021年度大会 | 第二批讲者名单出炉",
+    introduction: "人类文明的每一次进步，都是因为我们能在适应万变中积极地做出改变，无论是什么样的变化，我们在不断关注探讨的同时，就能赋予其正面的意义...",
     article: {
         type: "iframe",
-        src: "TEDxShenzhen2021Annual.html",
+        src: "2021AnnualConference-speaker-list.html",
     },
-    createTS: "",
+    createTS: "1616688000",
     authorID: 0,
-    path: "/tedxshenzhen21annual",
+    path: "/2021AnnualConference-speaker-list",
 }, {
     id: 4,
     banner: {
-        src: "TEDxShenzhen2021Annual/banner.jpg",
+        src: "2021AnnualConferenceRegistration/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
+        src: "2021AnnualConferenceRegistration/thumbnail.jpg",
         alt: "thumbnail",
     },
-    title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
-    introduction: "曾经，地球这个巨⼤的⻮轮随着全球化发展⽇以继夜地转动着，引导⼈类离开原地探索了世界的各个⻆落。 但在过去⼀年，这个巨⼤的⻮轮仿佛突然生锈了⼀般卡住，惊慌的⼈类⼜回归到闭塞的世界⾥⽆法相通: ",
+    title: "TEDxShenzhen2021年度大会报名 | 温故知新",
+    introduction: "每一次进步，每一次革命，无论朝着哪个方向发展，值得被探讨的，都可以让我们收获更多，更多的思想，更多的认知模式，去面对更多的机遇与可能...",
     article: {
         type: "iframe",
-        src: "TEDxShenzhen2021Annual.html",
+        src: "2021AnnualConference-registration.html",
     },
-    createTS: "",
+    createTS: "1617206400",
     authorID: 0,
-    path: "/tedxshenen2021annual",
-}, {
-    id: 5,
-    banner: {
-        src: "TEDxShenzhen2021Annual/banner.jpg",
-        alt: "banner",
-    },
-    thumbnail: {
-        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
-        alt: "thumbnail",
-    },
-    title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
-    introduction: "曾经，地球这个巨⼤的⻮轮随着全球化发展⽇以继夜地转动着，引导⼈类离开原地探索了世界的各个⻆落。 但在过去⼀年，这个巨⼤的⻮轮仿佛突然生锈了⼀般卡住，惊慌的⼈类⼜回归到闭塞的世界⾥⽆法相通: ",
-    article: {
-        type: "iframe",
-        src: "TEDxShenzhen2021Annual.html",
-    },
-    createTS: "",
-    authorID: 0,
-    path: "/tedxshenz21annual",
-}, {
-    id: 6,
-    banner: {
-        src: "TEDxShenzhen2021Annual/banner.jpg",
-        alt: "banner",
-    },
-    thumbnail: {
-        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
-        alt: "thumbnail",
-    },
-    title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
-    introduction: "曾经，地球这个巨⼤的⻮轮随着全球化发展⽇以继夜地转动着，引导⼈类离开原地探索了世界的各个⻆落。 但在过去⼀年，这个巨⼤的⻮轮仿佛突然生锈了⼀般卡住，惊慌的⼈类⼜回归到闭塞的世界⾥⽆法相通: ",
-    article: {
-        type: "iframe",
-        src: "TEDxShenzhen2021Annual.html",
-    },
-    createTS: "",
-    authorID: 0,
-    path: "/tedxshenzhannual",
-}, {
-    id: 7,
-    banner: {
-        src: "TEDxShenzhen2021Annual/banner.jpg",
-        alt: "banner",
-    },
-    thumbnail: {
-        src: "TEDxShenzhen2021Annual/thumbnail.jpg",
-        alt: "thumbnail",
-    },
-    title: "TEDxShenzhen2021年度大会正式开启售票 | Changed by 改变/改变",
-    introduction: "曾经，地球这个巨⼤的⻮轮随着全球化发展⽇以继夜地转动着，引导⼈类离开原地探索了世界的各个⻆落。 但在过去⼀年，这个巨⼤的⻮轮仿佛突然生锈了⼀般卡住，惊慌的⼈类⼜回归到闭塞的世界⾥⽆法相通: ",
-    article: {
-        type: "iframe",
-        src: "TEDxShenzhen2021Annual.html",
-    },
-    createTS: "",
-    authorID: 0,
-    path: "/tedxshennual",
+    path: "/2021AnnualConference-registration",
 }];
 function newsInit() {
     let output = [];
