@@ -48,5 +48,14 @@ router.get('/list', function (req, res, next) {
     data = videosDAO.selectList(pageNum, index);
     res.json(returnFilterArr(data));
 });
+router.get('/list/division', function (req, res, next) {
+    const params = req.query;
+    const division = params.division.split(",");
+    let pageNum = 12;
+    let index = (params.page - 1) * pageNum;// 锁定每次请求数量为10
+    let data = null;
+    data = videosDAO.selectListDivision(pageNum, index, division);
+    res.json(returnFilterArr(data));
+});
 
 module.exports = router;

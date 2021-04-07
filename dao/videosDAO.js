@@ -54,5 +54,20 @@ const videosDAO = function () {
         }
         return arr;
     }
+    this.selectListDivision = function (num, index = 0, division) {
+        let i = this.data.length - 1 - index, n = 1;
+        let arr = [];
+        while (n <= num && i >= 0) {
+            for (let y = 0; y < division.length; y++) {
+                if (division[y] == this.data[i].division) {
+                    arr.push(filter.getList(this.data[i]));
+                    break;
+                }
+            }
+            i--;
+            n++;
+        }
+        return arr;
+    }
 }
 module.exports = videosDAO;
