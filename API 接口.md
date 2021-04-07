@@ -67,7 +67,7 @@ result:[{
 
 
 
-####  /videos
+###  /videos
 
 获取单个视频相关数据
 
@@ -102,7 +102,7 @@ result:{
 
 #### /list
 
-获取一组 events 数据，用于列表展示
+获取一组 video 数据，用于列表展示
 
 ##### **request**
 
@@ -111,6 +111,32 @@ url:/videos/list?page=1
 ```
 
 ##### return
+
+```
+result:[{
+	id           : Number,   // 视频ID
+	title        : String,   // 标题
+	introduction : String,   // 简短介绍
+	thumbnail : {            // 主图
+	  src        : String,   
+	  alt        : String,
+	},
+	createTS     : Number,   // 创建时间
+	path         : String,   // 路由路径    
+},]
+```
+
+#### /list/division
+
+获取一组 分类的 video 数据，用于列表展示
+
+**request**
+
+division 原为数组。转化为字符串以，分割。
+
+```
+url:/videos/list?page=1&division=talk,video
+```
 
 ```
 result:[{
