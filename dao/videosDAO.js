@@ -54,18 +54,26 @@ const videosDAO = function () {
         }
         return arr;
     }
-    this.selectListDivision = function (num, index = 0, division) {
-        let i = this.data.length - 1 - index, n = 1;
+    this.selectListDivision = function (page_num, index = 0, division) { // index 为展示过数量,当前应展示第几个
+        let i = this.data.length - 1;// 倒序递增
+        let n = 1; // 展示的数量计数
         let arr = [];
-        while (n <= num && i >= 0) {
-            for (let y = 0; y < division.length; y++) {
-                if (division[y] == this.data[i].division) {
-                    arr.push(filter.getList(this.data[i]));
-                    break;
+        if (index < i + 1) {  //当跳过的数小于总长度
+            while (n <= page_num && i >= 0) {
+                for (let y = 0; y < division.length; y++) {
+                    if (division[y] == this.data[i].division) {
+                        if (index > 0) {
+                            index--;
+                        } else {
+                            arr.push(filter.getList(this.data[i]));
+                            n++;
+                        }
+                        break;
+                    }
                 }
+                i--;
             }
-            i--;
-            n++;
+
         }
         return arr;
     }

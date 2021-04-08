@@ -16,6 +16,7 @@ const returnFilterArr = function (data) {
             message: "服务器无法根据客户端请求的内容特性完成请求"
         }
 }
+const pageNum = 12;
 const returnFilterObj = function (obj) {
     var arr = Object.getOwnPropertyNames(obj);
     if (arr.length != 0)
@@ -42,7 +43,6 @@ router.get('/', function (req, res, next) {
 })
 router.get('/list', function (req, res, next) {
     const params = req.query;
-    let pageNum = 12;
     let index = (params.page - 1) * pageNum;// 锁定每次请求数量为10
     let data = null;
     data = videosDAO.selectList(pageNum, index);
@@ -51,7 +51,6 @@ router.get('/list', function (req, res, next) {
 router.get('/list/division', function (req, res, next) {
     const params = req.query;
     const division = params.division.split(",");
-    let pageNum = 12;
     let index = (params.page - 1) * pageNum;// 锁定每次请求数量为10
     let data = null;
     data = videosDAO.selectListDivision(pageNum, index, division);
