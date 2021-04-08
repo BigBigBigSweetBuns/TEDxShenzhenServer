@@ -25,11 +25,11 @@ const structure = {
 const newsData = [{
     id: 1,
     banner: {
-        src: "/2021AnnualConferencePreview/banner.jpg",
+        src: "2021AnnualConferencePreview/banner.jpg",
         alt: "banner",
     },
     thumbnail: {
-        src: "/2021AnnualConferencePreview/thumbnail.jpg",
+        src: "2021AnnualConferencePreview/thumbnail.jpg",
         alt: "thumbnail",
     },
     title: "TEDxShenzhen2021年度大会预告 | 浪潮之后，迎接改变",
