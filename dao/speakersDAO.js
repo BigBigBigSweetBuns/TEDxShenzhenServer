@@ -2,9 +2,9 @@ const filter = {
     getDetail: function (data) { // 过滤 文章详情页 所需的数据
         return {
             id: data.id,   // ID
-            protarit: {
-                src: data.protarit.src,
-                alt: data.protarit.alt,
+            portrait: {
+                src: data.portrait.src,
+                alt: data.portrait.alt,
             },
             contentHTML: data.contentHTML,
             path: data.path,
@@ -14,9 +14,9 @@ const filter = {
         return {
             id: data.id,   // 文章ID
             name: data.name,   // speaker 姓名 
-            protarit: {            // 肖像 
-                src: data.protarit.src,
-                alt: data.protarit.alt,
+            portrait: {            // 肖像 
+                src: data.portrait.src,
+                alt: data.portrait.alt,
             },
             path: data.path
         }
