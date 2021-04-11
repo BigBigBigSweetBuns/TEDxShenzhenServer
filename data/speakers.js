@@ -1,4 +1,5 @@
 const ossPortraitlBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/speakers/portrait";
+const ossEffectPictureBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/speakers/effectpicture";
 
 const structure = {
     id: 0, // 讲者ID
@@ -18,6 +19,10 @@ const data = [
             src: "/johnli.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/johnli.jpg",
+            alt: "portrait",
+        },
         name: "John Li",  // 讲者姓名
         contentHTML:
             "<p>John Li，毕业于美国加州大学数学与物理专业，后于美国南加州大学物理系量子信息方向NSF全奖攻读博士, 自诩为一个非典型数学家。</p><p>John 近十余年专注研究数学引擎技术，现正自主研发中国首个的完备数学引擎——让天下没有难做的数学。致力于把任何难题抽象成数学问题，再用数学引擎将其攻克。相关领域包括但不限于：用数学引擎做科普，用数学引擎做教育，用数学引擎做科研，用数学引擎做信息技术开发等。</p>",
@@ -26,6 +31,10 @@ const data = [
     }, {
         id: 2, // 讲者ID
         portrait: {  // 肖像图
+            src: "/gongjiaqin.jpg",
+            alt: "portrait",
+        },
+        effectPicture: {
             src: "/gongjiaqin.jpg",
             alt: "portrait",
         },
@@ -39,6 +48,10 @@ const data = [
             src: "/guanhaoguang.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/guanhaoguang.jpg",
+            alt: "portrait",
+        },
         name: "关浩光",
         contentHTML: "<p>关浩光，中欧国际工商学院管理学副教授，研究领域主要集中在工作与家庭的平衡、培训、领导力和偏差行为。</p><p>关博士在国际知名学术期刊，包括《管理学会杂志》、《应用心理学杂志》等，上发表过60+篇文章，近期发表的文章包括职场内卷、职场霸凌等内容领域。关博士的研究成果被引用2000+次，并且曾荣获美国管理学会和工业和组织心理学协会颁发的杰出研究奖。</p>",
         division: "2021",
@@ -46,6 +59,10 @@ const data = [
     }, {
         id: 4,
         portrait: {
+            src: "/haoxiaosai.jpg",
+            alt: "portrait",
+        },
+        effectPicture: {
             src: "/haoxiaosai.jpg",
             alt: "portrait",
         },
@@ -59,6 +76,10 @@ const data = [
             src: "/leiluozuhe.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/leiluozuhe.jpg",
+            alt: "portrait",
+        },
         name: "磊落组合",
         contentHTML: "<p>“磊落”于2013年成军，由中国资深音乐人王磊与建筑设计师、键盘手乐乐二人组成。王磊上世纪九十年代初开始从事音乐工作，曾任“苍蝇”乐队、“红桃5”乐队、“鲍家街43号”乐队贝斯手。乐乐自幼师从上海音乐学院前教授胡天俦，并毕业于澳大利亚悉尼大学建筑系。 </p><p>作为一个艺术流行音乐家组合，他们的音乐作品带有强烈的叙事感，风格丰富多彩，每一首乐曲都似乎是电影原声一般，充满倾诉性。自2013年成军以来，磊落二人一直持续创作，在不同类型学的范畴里不受牵制地自由摸索着，至此已发行5张全长录音室专辑及多首单曲。</p><p>2019年5月，磊落签约文投控股&哆啦音乐。</p>",
         division: "2021",
@@ -66,6 +87,10 @@ const data = [
     }, {
         id: 6,
         portrait: {
+            src: "/leiyuxi.jpg",
+            alt: "portrait",
+        },
+        effectPicture: {
             src: "/leiyuxi.jpg",
             alt: "portrait",
         },
@@ -79,6 +104,10 @@ const data = [
             src: "/liuxiangzi.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/liuxiangzi.jpg",
+            alt: "portrait",
+        },
         name: "刘湘子",
         contentHTML: "<p>刘湘子，亚洲首位登上美国林肯艺术中心的梵呗歌者、梵呗“狮子吼”唱法传承人、中国著名梵呗艺术家、梵呗音乐的传播者和推广者。</p><p>他创造性地把梵呗与现代音乐结合起来，把几近失传的“狮子吼”技法和梵文佛教经咒完美地融入到音乐创作中。</p><p>在长期与梵呗音乐的交融中，刘湘子悟出了在浮躁时代获取“安心”的方式，也体会出如何辩证看待“利他与利己”的关系。</p><p>刘湘子所理解的梵呗文化并非教人“出世”，相反，是在教人如何“大隐隐于世”如何正确认识自己并激发正能量，从而更好地经营生活，热爱生活。</p>",
         division: "2021",
@@ -86,6 +115,10 @@ const data = [
     }, {
         id: 8,
         portrait: {
+            src: "/lixia.jpg",
+            alt: "portrait",
+        },
+        effectPicture: {
             src: "/lixia.jpg",
             alt: "portrait",
         },
@@ -99,6 +132,10 @@ const data = [
             src: "/lushiyu.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/lushiyu.jpg",
+            alt: "portrait",
+        },
         name: "陆诗雨",
         contentHTML: "<p>陆诗雨，腾讯研究院高级研究员，从事与数字科技相关的社会研究，包括老年人、残障人群的数字使用，以及数字科技参与乡村振兴和社会救助。</p><p>作为主笔研究并撰写《吾老之域：老年人微信生活与家庭微信反哺》《社交的尺度——社交网络斋戒实验》等，发表论文、文章20余篇，长期致力于将“人的视角”引入到科技发展的语境，探索科技向善的行动路径。</p>",
         division: "2021",
@@ -106,6 +143,10 @@ const data = [
     }, {
         id: 10,
         portrait: {
+            src: "/renxinni.jpg",
+            alt: "portrait",
+        },
+        effectPicture: {
             src: "/renxinni.jpg",
             alt: "portrait",
         },
@@ -119,6 +160,10 @@ const data = [
             src: "/wanglingjie.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/wanglingjie.jpg",
+            alt: "portrait",
+        },
         name: "王令杰",
         contentHTML: "<p>王令杰，艺术家，是郝经芳&王令杰艺术家组合成员，现工作生活于法国米卢斯和中国上海。</p><p>郝经芳&王令杰的创作关注自然界的细微变化，以及人们对其发生的感知。主要媒介包括装置和影像。通过运用材料科学及工程学原理创作的作品呈现了对认知、情感与自然之间关系的探索，传达了一种交织着理性与感性色彩的形而上的思考。艺术与工科的双重专业背景，有效推动了艺术家对物质与精神世界之间终极共性的探求。</p><p>郝经芳&王令杰的创作作品和创作计划经常呈现于国内、国际的各个艺术机构和画廊，其中包括：第十四届里昂双年展、法国巴黎东京宫、蓬皮杜艺术和文化中心、尤伦斯沙丘美术馆、上海当代艺术博物馆等。他们参与拍摄制作的纪录长片《女工》获得瑞士苏黎世“The Global Skin”评委奖、凯撒奖纪录片提名。</p><p>在他们的创作命题之外，王令杰现同时在上海视觉艺术学院 Roy Ascott Technoetic Art 大师班任教，思考艺术和创作的边界，及其对更广泛社会群体的意义。</p>",
         division: "2021",
@@ -126,6 +171,10 @@ const data = [
     }, {
         id: 12,
         portrait: {
+            src: "/wangyile.jpg",
+            alt: "portrait",
+        },
+        effectPicture: {
             src: "/wangyile.jpg",
             alt: "portrait",
         },
@@ -139,6 +188,10 @@ const data = [
             src: "/xuexiaona.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/xuexiaona.jpg",
+            alt: "portrait",
+        },
         name: "薛晓娜",
         contentHTML: "<p>薛晓娜，曾经的IT白领，目前是一家国际非营利组织的资深项目经理。</p><p>2004年，她在澳大利亚伍伦贡大学获得通信工程专业硕士学位后，回国投入公益事业，成为国际计划（美国）陕西代表处的项目经理，主要负责信息技术类的公益项目。</p><p>特别是在陕西、云南和宁夏促进乡村女童平等参与STEM教育的项目。她参与研发、设计和实施的公益项目已经惠及6万多名乡村儿童和年轻女性，帮助Ta们争取到充分且平等地学习机会。</p>",
         division: "2021",
@@ -149,6 +202,10 @@ const data = [
             src: "/yangxin.jpg",
             alt: "portrait",
         },
+        effectPicture: {
+            src: "/yangxin.jpg",
+            alt: "portrait",
+        },
         name: "杨欣",
         contentHTML: "<p>杨欣，江河探险家、自然摄影师、四川省绿色江河环境保护促进会会长。</p><p>1984年开始长江摄影和探险考察，1994年-2005年，创建“四川省绿色江河环境保护促进会”，在可可西里建成中国民间第一个自然保护站，致力于可可西里藏羚羊保护。</p><p>2005年-2010年，在长江源持续开展“冰川变化监测”等调查，呼吁关注长江源生态环境的严峻状况。</p><p>2011年-2020年，在长江源建立中国民间第二个自然保护站——长江源水生态环境保护站。通过“垃圾换食品”、“守护斑头雁”等系列项目实施，推动了长江源生态环境保护进程。</p><p>杨欣曾获得“地球奖”、“母亲河奖”、“2006绿色年度人物奖”，并带领他的绿色江河团队几乎获得了中国所有的生态环保类奖项。同时，杨欣用20年的时间完成了7本图册的拍摄、撰写和编辑出版，其中《中国长江》1000张图片，30万文字，为长江最完整和最权威的图册。</p>",
         division: "2021",
@@ -156,6 +213,10 @@ const data = [
     }, {
         id: 15,
         portrait: {
+            src: "/zhoufang.jpg",
+            alt: "portrait",
+        },
+        effectPicture: {
             src: "/zhoufang.jpg",
             alt: "portrait",
         },
@@ -170,6 +231,7 @@ const videosInit = function () {
     for (let i = 0; i < data.length; i++) { // 将src补全
         output.push(data[i]);
         output[i].portrait.src = ossPortraitlBaseURL + data[i].portrait.src;
+        output[i].effectPicture.src = ossEffectPictureBaseURL + data[i].effectPicture.src;
     }
     return output;
 }

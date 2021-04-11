@@ -1,14 +1,27 @@
 const filter = {
     getDetail: function (data) { // 过滤 文章详情页 所需的数据
-        return {
-            id: data.id,   // ID
-            portrait: {
-                src: data.portrait.src,
-                alt: data.portrait.alt,
-            },
-            contentHTML: data.contentHTML,
-            path: data.path,
-        }
+        if (data.effectPicture)
+            return {
+                id: data.id,   // ID
+                name: data.name,
+                portrait: {
+                    src: data.effectPicture.src,
+                    alt: data.effectPicture.alt,
+                },
+                contentHTML: data.contentHTML,
+                path: data.path,
+            }
+        else
+            return {
+                id: data.id,   // ID
+                name: data.name,
+                portrait: {
+                    src: data.portrait.src,
+                    alt: data.portrait.alt,
+                },
+                contentHTML: data.contentHTML,
+                path: data.path,
+            }
     },
     getList: function (data) {
         return {

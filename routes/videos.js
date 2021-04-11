@@ -56,5 +56,12 @@ router.get('/list/division', function (req, res, next) {
     data = videosDAO.selectListDivision(pageNum, index, division);
     res.json(returnFilterArr(data));
 });
+router.get('/list/authorid', function (req, res, next) {
+    const params = req.query;
+    const authorid = params.authorid;
+    let data = null;
+    data = videosDAO.selectListAuthorID(authorid);
+    res.json(returnFilterArr(data));
+})
 
 module.exports = router;

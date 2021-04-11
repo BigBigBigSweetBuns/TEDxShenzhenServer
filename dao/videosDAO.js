@@ -54,6 +54,15 @@ const videosDAO = function () {
         }
         return arr;
     }
+    this.selectListAuthorID = function (authorID) { // 通过判断 作者id 获取
+        let arr = [];
+        for (let i = 0; i < this.data.length; i++) {
+            if (this.data[i].authorID == authorID) {
+                arr.push(filter.getList(this.data[i]));
+            }
+        }
+        return arr;
+    };
     this.selectListDivision = function (page_num, index = 0, division) { // index 为展示过数量,当前应展示第几个
         let i = this.data.length - 1;// 倒序递增
         let n = 1; // 展示的数量计数
