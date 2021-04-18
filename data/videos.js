@@ -1,5 +1,5 @@
 const ossThumbnailBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/videos/thumbnail"
-const ossVideoBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/videos/"
+const ossVideoBaseURL = "https://tedxshenzhen.oss-cn-shenzhen.aliyuncs.com/videos"
 // 数据结构
 const structure = {
     id: 0,                       // 文章ID
@@ -244,7 +244,7 @@ const data = [
     }, {
         id: 15,
         thumbnail: {
-            src: "/happy-architecture.jpg",
+            src: "/happy-Architecture.jpg",
             alt: "thumbnail",
         },
         title: "把建筑空间变成巨型玩具——快乐建筑学 | 阮文韬Manfred Yuen",
@@ -252,7 +252,7 @@ const data = [
         contentHTML: "<p>从世界级事务所到回归香港本土，通过一系列志愿者的工作——为单身老人修缮公屋，为要被消灭的“排档”去说服政府……阮文韬意识到，作为建筑师，我们不应该只关注于冰冷的建筑形式，材料和规模，更应该致力于关注和创造建筑可以提供的东西，就是快乐和幸福。</p><p>阮文韬，GROUNDWORK元新建城创办人，阮文韬具有多重身份——建筑师、专栏作家、电台节目嘉宾主持、大学讲师。而在多重身份的构成下，他执着追求设计的梦想和敢为人先的精神，他的设计结合了人文与美学带给建筑不一样的生命。</p><p>自2007年创办Groun</p>",
         video: {
             type: "src",
-            src: "/2019/happy-architecture.mp4",
+            src: "/2019/happy-Architecture.mp4",
         },
         division: "talk",
         createTS: "",

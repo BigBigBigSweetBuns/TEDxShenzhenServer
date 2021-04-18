@@ -35,7 +35,7 @@ router.get('/', function (req, res, next) {
     const params = req.query;
     let data = null;
     if (params.path) {
-        data = videosDAO.selectPath(params.path);
+        data = videosDAO.selectPath(params.path.toLowerCase());
     } else if (params.id) {
         data = videosDAO.selectId(params.id);
     }
